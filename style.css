@@ -3,8 +3,16 @@
   flex-direction: column;
 }
 
-.flex-center {
+.flext-default {
+  display: flex;
+}
+
+.flex-center-row {
   justify-content: center;
+}
+
+.flex-center-column {
+  
   align-items: center;
 }
 
@@ -19,15 +27,39 @@
   justify-content: space-evenly;
 }
 
+.nav {
+  border-radius: 0.25em;
+}
+
 .nav , .nav > ul > li > input{
   background: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.45) 100%), linear-gradient(to left, rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0) 0.2%, rgba(0, 0, 0, 0) 99.8%, rgba(0, 0, 0, 0.2) 100%), linear-gradient(to bottom, #666 0, #5e5e5e 50%, #707070 51%, #808080 100%);
+
 }
+
 
 .nav > ul > li {
   float: left;
-  padding: 0.4em 1em 0.4em 1em;
+  padding: 0.5em 2em 0.5em 2em;
   font-family: sans-serif;
+  overflow: hidden;
+  border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAQAAABTNcdGAAAAEUlEQVQIHWP4r8bA8F%2BKwQEADZUCf37PGokAAAAASUVORK5CYII%3D") 0 2 0 1;
+  border-width: 0 2px 0 1px;
+  border-style: solid;
+  cursor: pointer;
+}
+
+.nav > ul > li:hover {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAkCAQAAADifZiHAAAAJ0lEQVQIW2P4L8zE8JeJ4R8q%2Bo%2BKCIH%2FjEA1TAyMSIgJRkIQM9BYAGa0Dj%2FXpUiAAAAAAElFTkSuQmCC') repeat-x 0 0, repeat-y 0 0, rgba(0, 0, 0, 0.4);
+}
+
+.nav > ul > li:last-child:hover{
+  background-color: transparent;
+  cursor:default;
+}
+
+.links {
   color: white;
+  text-decoration: none;
 }
 
 .nav > ul > li > input {
@@ -35,6 +67,7 @@
   border: 1px solid #5e5e5e;
   background-color: #5e5e5e;
 }
+
 
 .search_icon{
   position: absolute;
@@ -78,22 +111,26 @@
 }
 
 .images {
-  display: flex;
-  margin-top: 0.2em;
+  max-width: 50%;
+  margin-top: 0.03em;
 }
 
-.images > img {
-  padding: 0.2em;
-  width: 400px;
+.images > a > img {
+  padding: 0.06em;
+  width: 359px;
 }
 
 footer {
-  display: flex;
-  width: 75%;
+  bottom: 0;
+}
+
+.wrapper {
+  padding: 1em;
 }
 
 .left_side {
-  font-size: small;
+  font-size: 11px;
+  margin-right: 1em;
   line-height: 2em;
   color: #909090;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -101,10 +138,12 @@ footer {
 
 .left_side > p > a {
   color: #1F94D1;
+  cursor: pointer;
+  font-size: 10px;
 }
 
-.left_side > p > a:hover {
-  cursor: pointer;
+.left_side > p {
+  font-weight: bold;
 }
 
 .terms {
@@ -114,14 +153,17 @@ footer {
 }
 
 .right_side {
-  font-size: small;
+  margin-left: 1em;
+  font-size: 10px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .right_side > a {
   color: #1F94D1;
   border-right: 1px solid #a8a6a6;
-  padding: 0 0.5em 0 0.5em;
+  padding: 0 0.4em 0 0.4em;
+  font-size: 10px;
+  font-weight: bold;
 }
 
 .right_side > a:hover {
