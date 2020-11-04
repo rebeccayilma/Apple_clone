@@ -1,0 +1,172 @@
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.flext-default {
+  display: flex;
+}
+
+.flex-center-row {
+  justify-content: center;
+}
+
+.flex-center-column {
+  align-items: center;
+}
+
+.banner {
+  height: 70vh;
+  width: 75%;
+  background-image: url('https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right bottom;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav {
+  border-radius: 0.25em;
+}
+
+.nav,
+.nav > ul > li > input {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.45) 100%), linear-gradient(to left, rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0) 0.2%, rgba(0, 0, 0, 0) 99.8%, rgba(0, 0, 0, 0.2) 100%), linear-gradient(to bottom, #666 0, #5e5e5e 50%, #707070 51%, #808080 100%);
+}
+
+.nav > ul > li {
+  float: left;
+  padding: 0.5em 2em 0.5em 2em;
+  font-family: sans-serif;
+  overflow: hidden;
+  border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAQAAABTNcdGAAAAEUlEQVQIHWP4r8bA8F%2BKwQEADZUCf37PGokAAAAASUVORK5CYII%3D") 0 2 0 1;
+  border-width: 0 2px 0 1px;
+  border-style: solid;
+  cursor: pointer;
+}
+
+.nav > ul > li:hover {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAkCAQAAADifZiHAAAAJ0lEQVQIW2P4L8zE8JeJ4R8q%2Bo%2BKCIH%2FjEA1TAyMSIgJRkIQM9BYAGa0Dj%2FXpUiAAAAAAElFTkSuQmCC') repeat-x 0 0, repeat-y 0 0, rgba(0, 0, 0, 0.4);
+}
+
+.nav > ul > li:last-child:hover {
+  background-color: transparent;
+  cursor: default;
+}
+
+.links {
+  color: white;
+  text-decoration: none;
+}
+
+.nav > ul > li > input {
+  border-radius: 1em;
+  border: 1px solid #5e5e5e;
+  background-color: #5e5e5e;
+}
+
+.search_icon {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  margin-left: 5px;
+}
+
+.title {
+  color: #e0e6ec;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: lighter;
+}
+
+.title:hover {
+  cursor: pointer;
+}
+
+.top {
+  font-size: 4em;
+}
+
+.middle {
+  font-size: 2em;
+  width: 60%;
+  margin: 0.8em 0 1em 0;
+}
+
+.bottom {
+  font-size: 1.6em;
+  margin-bottom: 2.7em;
+}
+
+.bottom:hover {
+  text-decoration: underline #e0e6ec;
+}
+
+.search-field i {
+  position: absolute;
+  top: 3px;
+}
+
+.images {
+  max-width: 50%;
+  margin-top: 0.03em;
+}
+
+.right_side > img {
+  padding: 0 0.5em 0 0.5em;
+}
+
+.images > a > img {
+  padding: 0.06em;
+  width: 359px;
+}
+
+footer {
+  bottom: 0;
+}
+
+.wrapper {
+  padding: 1em;
+}
+
+.left_side {
+  font-size: 11px;
+  margin-right: 1em;
+  line-height: 2em;
+  color: #909090;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.right_side > a {
+  color: #1f94d1;
+  border-right: 1px solid #a8a6a6;
+  padding: 0 0.4em 0 0.4em;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.left_side > p > a {
+  color: #1f94d1;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.left_side > p {
+  font-weight: bold;
+}
+
+.terms {
+  border-right: 1px solid #a8a6a6;
+  padding: 0 0.5em 0 0.5em;
+  margin-right: 0.5em;
+}
+
+.right_side {
+  margin-left: 1em;
+  font-size: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.right_side > a:hover {
+  cursor: pointer;
+}
