@@ -1,21 +1,20 @@
-# Apple_clone
-A clone of old an old version of the Apple website webpage.
+### Apple Clone
+A clone of old an old version of [apple.com](https://web.archive.org/web/20140301004610/http://www.apple.com/) website.
 
 
 ![Screenshot](https://github.com/rebeccayilma/Apple_clone/blob/development/screenshot.png?raw=true)
 
 
-## Description of the Project
+## Built With
 
+HTML & CSS
 
 
 ## Live Link
 
 Feel free to check the [Live Demo]()
 
-## Built With
 
-HTML & CSS
 
 ## Authors
 
